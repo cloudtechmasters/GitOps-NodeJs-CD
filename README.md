@@ -12,7 +12,7 @@
     yum install docker -y
     service docker start
 # Clone code from github:
-    git clone https://github.com/Naresh240/GitOps-NodeJs-CD.git
+    git clone https://github.com/cloudtechmasters/GitOps-NodeJs-CD.git
     cd GitOps-NodeJs-CD
 # Build Docker image for Springboot Application
     docker build -t naresh240/nodejsdeploy:latest .
@@ -21,7 +21,7 @@
 # Push docker image to dockerhub
     docker push naresh240/nodejsdeploy:latest
 # EKS Cluster Setup:
-  [EKS Cluster Setup](https://github.com/Naresh240/eks-cluster-setup/blob/main/README.md)
+  [EKS Cluster Setup](https://github.com/cloudtechmasters/eks-cluster-setup/blob/main/README.md)
 # Install fluxctl:
     wget https://github.com/fluxcd/flux/releases/download/1.21.0/fluxctl_linux_amd64
     mv fluxctl_linux_amd64 fluxctl
